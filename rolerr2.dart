@@ -3,16 +3,16 @@ import 'dart:math';
 
 final randomizer = Random();
 
-class DiceRoller extends StatefulWidget {
-  const DiceRoller({super.key});
+class DiceRoller2 extends StatefulWidget {
+  const DiceRoller2({super.key});
 
   @override
-  State<DiceRoller> createState() {
+  State<DiceRoller2> createState() {
     return _DiceRollerState();
   }
 }
 
-class _DiceRollerState extends State<DiceRoller> {
+class _DiceRollerState extends State<DiceRoller2> {
   var currentDiceRoll = 2;
   var currentDiceRoll2 = 2;
 
@@ -30,6 +30,10 @@ class _DiceRollerState extends State<DiceRoller> {
       children: [
         Image.asset(
           'assets/image/dice-$currentDiceRoll.png',
+          width: 150,
+        ),
+        Image.asset(
+          'assets/image/dice-$currentDiceRoll2.png',
           width: 150,
         ),
         TextButton(
